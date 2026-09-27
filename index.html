@@ -3,26 +3,131 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Artiste — Portfolio</title>
+<title>KALOPSYANA — Artiste</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#222;background:#fafafa;line-height:1.6}header{position:sticky;top:0;background:#fff;border-bottom:1px solid #ddd;z-index:10}.nav{max-width:1100px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-size:1.2rem;font-weight:bold;letter-spacing:.08em}.menu{display:flex;gap:22px;flex-wrap:wrap}.menu a{color:#222;text-decoration:none;font-size:.95rem}.menu a:hover{opacity:.55}.hero{min-height:55vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 24px;background:#eee}.hero h1{font-size:clamp(2.5rem,7vw,5rem);font-weight:300;margin:0 0 10px}.hero p{font-size:1.1rem;color:#666}.section{max-width:1100px;margin:auto;padding:70px 24px}.section h2{font-size:2rem;font-weight:400;margin-top:0}.bio{max-width:750px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px}.card{background:white;border:1px solid #ddd;overflow:hidden}.placeholder{height:280px;background:#ddd;display:flex;align-items:center;justify-content:center;color:#777}.card-content{padding:20px}.card h3{margin:0 0 5px;font-weight:500}.card p{margin:5px 0;color:#666}.media{padding:18px 0}.media a{color:#222}.contact{text-align:center;background:#eee}.footer{text-align:center;padding:30px;color:#777;font-size:.9rem;border-top:1px solid #ddd}@media(max-width:650px){.nav{align-items:flex-start;flex-direction:column}.menu{gap:12px}}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#222;background:#fafafa;line-height:1.7}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid #ddd;z-index:10}
+.nav{max-width:1100px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:1.2rem;font-weight:bold;letter-spacing:.12em}
+.menu{display:flex;gap:22px;flex-wrap:wrap;align-items:center}
+.menu a{color:#222;text-decoration:none;font-size:.95rem}.menu a:hover{opacity:.55}
+.lang{border:1px solid #bbb;background:#fff;padding:5px 9px;cursor:pointer;font-size:.8rem}
+.lang.active{background:#222;color:#fff}
+.hero{min-height:55vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 24px;background:#eee}
+.hero h1{font-size:clamp(2.5rem,7vw,5rem);font-weight:300;letter-spacing:.12em;margin:0 0 10px}
+.hero p{font-size:1.1rem;color:#666}
+.section{max-width:1100px;margin:auto;padding:70px 24px}.section h2{font-size:2rem;font-weight:400;margin-top:0}
+.bio{max-width:850px}.bio-intro{font-size:1.15rem;margin-bottom:30px}.bio p{margin:0 0 18px}.bio em{font-style:italic}.bio strong{font-weight:600}
+.bio-language{display:none}.bio-language.active{display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px}
+.card{background:white;border:1px solid #ddd;overflow:hidden}.placeholder{height:280px;background:#ddd;display:flex;align-items:center;justify-content:center;color:#777}
+.card-content{padding:20px}.card h3{margin:0 0 5px;font-weight:500}.card p{margin:5px 0;color:#666}
+.media{padding:18px 0}.media a{color:#222}.contact{text-align:center;background:#eee}
+.footer{text-align:center;padding:30px;color:#777;font-size:.9rem;border-top:1px solid #ddd}
+@media(max-width:650px){.nav{align-items:flex-start;flex-direction:column}.menu{gap:12px}}
 </style>
 </head>
 <body>
-<header><nav class="nav"><div class="logo">ARTISTE</div><div class="menu"><a href="#bio">Bio</a><a href="#peintures">Peintures</a><a href="#scultures">Scultures</a><a href="#music">Music</a><a href="#videos">Vidéos</a></div></nav></header>
+<header><nav class="nav">
+<div class="logo">KALOPSYANA</div>
+<div class="menu">
+<a href="#bio">Bio</a><a href="#peintures">Peintures</a><a href="#sculptures">Sculptures</a><a href="#music">Music</a><a href="#videos">Vidéos</a>
+<button class="lang active" id="frBtn" onclick="setLanguage('fr')">FR</button>
+<button class="lang" id="enBtn" onclick="setLanguage('en')">EN</button>
+</div>
+</nav></header>
+
 <main>
-<section class="hero"><div><h1>Portfolio</h1><p>Peintures · Scultures · Musique · Vidéos</p></div></section>
-<section id="bio" class="section"><h2>Bio</h2><div class="bio"><p>Bienvenue dans l'univers de l'artiste. Ce site présente une sélection de peintures, sculptures et projets audiovisuels.</p><p>Chaque œuvre explore les formes, les couleurs et les émotions à travers une démarche personnelle et contemporaine.</p></div></section>
+<section class="hero"><div><h1>KALOPSYANA</h1><p>Peintures · Sculptures · Musique · Vidéos</p></div></section>
+
+<section id="bio" class="section">
+<h2>Bio</h2>
+<div class="bio">
+<div id="bio-fr" class="bio-language active">
+<p class="bio-intro">Je m'appelle <strong>Mu</strong> et je crée sous le pseudonyme <strong>Kalopsyana</strong>.</p>
+<p><strong>Kalopsia :</strong><br><em>L'illusion que les choses sont plus belles qu'elles ne le sont réellement.</em></p>
+<p>Je suis une artiste autodidacte, passionnée par les Arts depuis mon enfance.</p>
+<p>J'ai acquis mon savoir-faire en explorant des techniques artistiques, mixtes et artisanales venues de différents horizons multiculturels et de plusieurs mouvements créatifs et historiques : la peinture sous toutes ses formes, le dessin — avec une attirance particulière pour les visages et les corps humains —, la sculpture, l'argile, le bois, le béton cellulaire et le papier mâché.</p>
+<p>J'aime également assembler toutes sortes de matériaux recyclés : objets et sacs en plastique, boîtes en carton, papier, boîtes à œufs, emballages alimentaires, bouchons, pailles, tissus, laines, feutre, bijoux, jouets d'enfants et vieux objets de seconde main.</p>
+<p>Un peu alchimiste, j'aime jouer avec ces matériaux en essayant d'inventer ou de réinventer de nouveaux procédés.</p>
+<p>J'utilise aussi des produits naturels : thé, café, épluchures de légumes, sables, pierres concassées, plantes, branches d'arbres, racines, troncs, feuilles, pommes de pin…</p>
+<p>J'aime mélanger les produits : peintures, ciments, béton, sables et plâtre.</p>
+<p>Avec ce que je trouve, je crée des installations en techniques mixtes, pensées pour être observées sous différents angles. On peut tourner autour de mes œuvres et découvrir des secrets cachés. Cela éveille la curiosité.</p>
+<p>Je réalise également des carnets artistiques, des peintures sur toile ou sur bois, de la pyrogravure ainsi que des objets et des bijoux à partir de nombreux matériaux que j'assemble selon mes envies, à la couture, à la colle, avec des clous ou des vis.</p>
+<p>Toutes mes œuvres ont une signification cachée.</p>
+<p>J'aime l'idée que chacun puisse trouver — ou non — le <strong>CODE</strong> de mon travail et en créer sa propre <strong>DÉFINITION</strong>.</p>
+<p>Je mets mes œuvres en valeur en les mettant en scène.</p>
+<p>Ma formation en infographie, sur des logiciels tels que Photoshop, Illustrator et Dreamweaver, m'a permis de développer et de maîtriser ce sens de l'image.</p>
+<p>J'ai récemment décidé de me consacrer également au montage vidéo et à la musique afin d'apporter une autre dimension à mon Art.</p>
+<p>Mon petit laboratoire est rempli de petits trésors qui nourrissent mon imagination et ma folie.</p>
+<p>Je me raconte des histoires pour inventer mon monde, un monde rempli d'oppositions, de mystère et de questions sur le sens de la vie, selon un principe de <strong>Rituel Sacré</strong>.</p>
+<p><strong>Ne vous fiez pas aux apparences.</strong></p>
+<p>Je vous invite à découvrir mon Univers.</p>
+<p>Les imperfections, comme les choses les plus insignifiantes, peuvent avoir une immense valeur si vous savez les illuminer.</p>
+<p><em>L'illusion que les choses sont plus belles qu'elles ne le sont réellement.</em></p>
+<p><strong>Je vous invite à découvrir mon Univers.</strong></p>
+<p><strong>Rien ne dure, rien n'est terminé, rien n'est parfait.</strong></p>
+</div>
+
+<div id="bio-en" class="bio-language">
+<p class="bio-intro">My name is <strong>Mu</strong> and I create under the pseudonym <strong>Kalopsyana</strong>.</p>
+<p><strong>Kalopsia:</strong><br><em>The illusion that things are more beautiful than they really are.</em></p>
+<p>I am a self-taught artist, passionate about the Arts since childhood.</p>
+<p>I acquired my know-how by exploring artistic, mixed-media and artisanal techniques from various multicultural horizons and creative and historical movements: painting in all its forms, drawing — with a particular attraction for faces and the human body — sculpture, clay, wood, cellular concrete and papier-mâché.</p>
+<p>I also enjoy assembling all kinds of recycled materials: plastic objects and bags, cardboard boxes, paper, egg boxes, food packaging, bottle caps, straws, fabrics, wool, felt, jewellery, children's toys and old second-hand objects.</p>
+<p>A bit of an alchemist, I like to play with these materials, trying to invent or reinvent new processes.</p>
+<p>I also use natural products: tea, coffee, vegetable peelings, sand, crushed stones, plants, tree branches, roots, trunks, leaves, pine cones…</p>
+<p>I like to mix materials and products: paints, cements, concrete, sand and plaster.</p>
+<p>With whatever I find, I create mixed-media installations, designed to be seen from different facets. You can walk around them and discover hidden secrets. This is intended to awaken curiosity.</p>
+<p>I also create art journals, paintings on canvas or wood, pyrography, as well as objects and jewellery made from many different materials that I assemble according to my desires — by sewing, gluing, nailing or screwing.</p>
+<p>All of my works have a hidden meaning.</p>
+<p>I like the idea that people may find — or not find — the <strong>CODE</strong> of my work by creating their own <strong>DEFINITION</strong>.</p>
+<p>I highlight my work by staging my pieces.</p>
+<p>My training in computer graphics, using software such as Photoshop, Illustrator and Dreamweaver, allowed me to develop and master this sense of images.</p>
+<p>I recently decided to explore video editing and music in order to bring another dimension to my Art.</p>
+<p>My little laboratory is filled with little treasures that shape my imagination and my madness.</p>
+<p>I tell myself stories to invent my world, a world filled with oppositions, mystery and questions about the meaning of life, under a principle of <strong>Sacred Ritual</strong>.</p>
+<p><strong>Do not be fooled by appearances.</strong></p>
+<p>I invite you to discover my Universe.</p>
+<p>Imperfections, and even the most trivial things, can be of immense value if you know how to illuminate them.</p>
+<p><em>The illusion of things being more beautiful than they really are.</em></p>
+<p><strong>I invite you to discover my Universe.</strong></p>
+<p><strong>Nothing lasts, Nothing is finished, Nothing is perfect.</strong></p>
+</div>
+</div>
+</section>
+
 <section id="peintures" class="section"><h2>Peintures</h2><div class="grid">
 <article class="card"><div class="placeholder">Image de l'œuvre</div><div class="card-content"><h3>Éclats de lumière</h3><p><strong>Technique :</strong> Acrylique sur toile</p><p><strong>Dimensions :</strong> 80 × 100 cm</p><p>Une composition abstraite où la lumière traverse des formes organiques.</p></div></article>
 <article class="card"><div class="placeholder">Image de l'œuvre</div><div class="card-content"><h3>Mémoire silencieuse</h3><p><strong>Technique :</strong> Huile sur toile</p><p><strong>Dimensions :</strong> 60 × 80 cm</p><p>Une œuvre construite autour de contrastes profonds et de nuances subtiles.</p></div></article>
 <article class="card"><div class="placeholder">Image de l'œuvre</div><div class="card-content"><h3>Au-delà des formes</h3><p><strong>Technique :</strong> Technique mixte</p><p><strong>Dimensions :</strong> 100 × 100 cm</p><p>Une recherche entre matière, mouvement et perception.</p></div></article>
 </div></section>
-<section id="scultures" class="section"><h2>Scultures</h2><div class="grid"><article class="card"><div class="placeholder">Image de la sculpture</div><div class="card-content"><h3>Équilibre</h3><p>Bronze · 2025</p></div></article><article class="card"><div class="placeholder">Image de la sculpture</div><div class="card-content"><h3>Fragments</h3><p>Céramique · 2024</p></div></article></div></section>
+
+<section id="sculptures" class="section"><h2>Sculptures</h2><div class="grid">
+<article class="card"><div class="placeholder">Image de la sculpture</div><div class="card-content"><h3>Équilibre</h3><p>Bronze · 2025</p></div></article>
+<article class="card"><div class="placeholder">Image de la sculpture</div><div class="card-content"><h3>Fragments</h3><p>Céramique · 2024</p></div></article>
+</div></section>
+
 <section id="music" class="section"><h2>Music</h2><div class="media"><p>Découvrez les projets musicaux et créations sonores.</p><p><a href="#">▶ Écouter un morceau</a></p></div></section>
-<section id="videos" class="section"><h2>Vidéos</h2><div class="grid"><article class="card"><div class="placeholder">Vidéo</div><div class="card-content"><h3>Présentation de l'artiste</h3><p>Une courte présentation vidéo.</p></div></article><article class="card"><div class="placeholder">Vidéo</div><div class="card-content"><h3>Dans l'atelier</h3><p>Images du processus de création.</p></div></article></div></section>
+
+<section id="videos" class="section"><h2>Vidéos</h2><div class="grid">
+<article class="card"><div class="placeholder">Vidéo</div><div class="card-content"><h3>Présentation de l'artiste</h3><p>Une courte présentation vidéo.</p></div></article>
+<article class="card"><div class="placeholder">Vidéo</div><div class="card-content"><h3>Dans l'atelier</h3><p>Images du processus de création.</p></div></article>
+</div></section>
+
 <section class="section contact"><h2>Contact</h2><p>Pour toute demande d'information concernant une œuvre ou une exposition.</p></section>
 </main>
-<footer class="footer">© 2026 — Artiste</footer>
+<footer class="footer">© 2026 — KALOPSYANA</footer>
+
+<script>
+function setLanguage(lang){
+  document.getElementById('bio-fr').classList.toggle('active',lang==='fr');
+  document.getElementById('bio-en').classList.toggle('active',lang==='en');
+  document.getElementById('frBtn').classList.toggle('active',lang==='fr');
+  document.getElementById('enBtn').classList.toggle('active',lang==='en');
+  document.documentElement.lang=lang;
+}
+</script>
 </body>
 </html>
