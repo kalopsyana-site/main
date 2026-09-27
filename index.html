@@ -32,7 +32,7 @@ header{position:sticky;top:0;background:#fff;border-bottom:1px solid #ddd;z-inde
 <header><nav class="nav">
 <div class="logo">KALOPSYANA</div>
 <div class="menu">
-<a href="#bio">Bio</a><a href="peintures.html">Peintures</a><a href="sculptures.html">Sculptures</a><a href="music.html">Music</a><a href="videos.html">Vidéos</a>
+<a id="navBio" href="#bio">Bio</a><a id="navPaintings" href="peintures.html">Peintures</a><a id="navSculptures" href="sculptures.html">Sculptures</a><a id="navMusic" href="music.html">Music</a><a id="navVideos" href="videos.html">Vidéos</a>
 <button class="lang active" id="frBtn" onclick="setLanguage('fr')">FR</button>
 <button class="lang" id="enBtn" onclick="setLanguage('en')">EN</button>
 </div>
@@ -107,6 +107,12 @@ function setLanguage(lang){
   document.getElementById('frBtn').classList.toggle('active',lang==='fr');
   document.getElementById('enBtn').classList.toggle('active',lang==='en');
   document.documentElement.lang=lang;
+
+  document.getElementById('navBio').textContent=lang==='fr'?'Bio':'About';
+  document.getElementById('navPaintings').textContent=lang==='fr'?'Peintures':'Paintings';
+  document.getElementById('navSculptures').textContent=lang==='fr'?'Sculptures':'Sculptures';
+  document.getElementById('navMusic').textContent=lang==='fr'?'Music':'Music';
+  document.getElementById('navVideos').textContent=lang==='fr'?'Vidéos':'Videos';
 }
 </script>
 </body>
