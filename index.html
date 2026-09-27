@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artiste — Portfolio</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#222;background:#fafafa;line-height:1.6}header{position:sticky;top:0;background:#fff;border-bottom:1px solid #ddd;z-index:10}.nav{max-width:1100px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-size:1.2rem;font-weight:bold;letter-spacing:.08em}.menu{display:flex;gap:22px;flex-wrap:wrap}.menu a{color:#222;text-decoration:none;font-size:.95rem}.menu a:hover{opacity:.55}.hero{min-height:55vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 24px;background:#eee}.hero h1{font-size:clamp(2.5rem,7vw,5rem);font-weight:300;margin:0 0 10px}.hero p{font-size:1.1rem;color:#666}.section{max-width:1100px;margin:auto;padding:70px 24px}.section h2{font-size:2rem;font-weight:400;margin-top:0}.bio{max-width:750px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px}.card{background:white;border:1px solid #ddd;overflow:hidden}.placeholder{height:280px;background:#ddd;display:flex;align-items:center;justify-content:center;color:#777}.card-content{padding:20px}.card h3{margin:0 0 5px;font-weight:500}.card p{margin:5px 0;color:#666}.media{padding:18px 0}.media a{color:#222}.contact{text-align:center;background:#eee}.footer{text-align:center;padding:30px;color:#777;font-size:.9rem;border-top:1px solid #ddd}@media(max-width:650px){.nav{align-items:flex-start;flex-direction:column}.menu{gap:12px}}
+</style>
 </head>
 <body>
-    <h1>Hello World !</h1>
+<header><nav class="nav"><div class="logo">ARTISTE</div><div class="menu"><a href="#bio">Bio</a><a href="#peintures">Peintures</a><a href="#scultures">Scultures</a><a href="#music">Music</a><a href="#videos">Vidéos</a></div></nav></header>
+<main>
+<section class="hero"><div><h1>Portfolio</h1><p>Peintures · Scultures · Musique · Vidéos</p></div></section>
+<section id="bio" class="section"><h2>Bio</h2><div class="bio"><p>Bienvenue dans l'univers de l'artiste. Ce site présente une sélection de peintures, sculptures et projets audiovisuels.</p><p>Chaque œuvre explore les formes, les couleurs et les émotions à travers une démarche personnelle et contemporaine.</p></div></section>
+<section id="peintures" class="section"><h2>Peintures</h2><div class="grid">
+<article class="card"><div class="placeholder">Image de l'œuvre</div><div class="card-content"><h3>Éclats de lumière</h3><p><strong>Technique :</strong> Acrylique sur toile</p><p><strong>Dimensions :</strong> 80 × 100 cm</p><p>Une composition abstraite où la lumière traverse des formes organiques.</p></div></article>
+<article class="card"><div class="placeholder">Image de l'œuvre</div><div class="card-content"><h3>Mémoire silencieuse</h3><p><strong>Technique :</strong> Huile sur toile</p><p><strong>Dimensions :</strong> 60 × 80 cm</p><p>Une œuvre construite autour de contrastes profonds et de nuances subtiles.</p></div></article>
+<article class="card"><div class="placeholder">Image de l'œuvre</div><div class="card-content"><h3>Au-delà des formes</h3><p><strong>Technique :</strong> Technique mixte</p><p><strong>Dimensions :</strong> 100 × 100 cm</p><p>Une recherche entre matière, mouvement et perception.</p></div></article>
+</div></section>
+<section id="scultures" class="section"><h2>Scultures</h2><div class="grid"><article class="card"><div class="placeholder">Image de la sculpture</div><div class="card-content"><h3>Équilibre</h3><p>Bronze · 2025</p></div></article><article class="card"><div class="placeholder">Image de la sculpture</div><div class="card-content"><h3>Fragments</h3><p>Céramique · 2024</p></div></article></div></section>
+<section id="music" class="section"><h2>Music</h2><div class="media"><p>Découvrez les projets musicaux et créations sonores.</p><p><a href="#">▶ Écouter un morceau</a></p></div></section>
+<section id="videos" class="section"><h2>Vidéos</h2><div class="grid"><article class="card"><div class="placeholder">Vidéo</div><div class="card-content"><h3>Présentation de l'artiste</h3><p>Une courte présentation vidéo.</p></div></article><article class="card"><div class="placeholder">Vidéo</div><div class="card-content"><h3>Dans l'atelier</h3><p>Images du processus de création.</p></div></article></div></section>
+<section class="section contact"><h2>Contact</h2><p>Pour toute demande d'information concernant une œuvre ou une exposition.</p></section>
+</main>
+<footer class="footer">© 2026 — Artiste</footer>
 </body>
 </html>
